@@ -1,33 +1,33 @@
 export const AppFeatures = [
   {
     id: "01",
-    title: "AI-Powered Interview Preparation",
+    title: "Tailored just for you",
     description:
-      " Our platform uses advanced AI algorithms to simulate real interview scenarios, helping you practice and refine your skills.",
+      "Get personalized interview questions and model answers based on your role, experience, and specific focus areas.
   },
 
   {
     id: "02",
-    title: "Personalized Feedback",
+    title: "Learn at your own pace",
     description:
-      " Receive tailored feedback on your performance, including strengths and areas for improvement, to help you grow.",
+      "Expand answers only when you;re ready. Dive deeper into concepts and explore related topics at your own pace.",
   },
   {
     id: "03",
-    title: "Comprehensive Question Bank",
+    title: "Capture your insights",
     description:
-      " Access a vast library of interview questions across various domains and industries, ensuring you're well-prepared.",
+      "Add personal notes to any question and pin important ones to the topp, making your learning more orhanised and effective.",
   },
   {
     id: "04",
-    title: "Mock Interviews with Experts",
+    title: 'understand the "why" behind ansers',
     description:
-      " Schedule mock interviews with industry professionals who can provide valuable insights and tips.",
+      "Beyound just answers, unlock detailed concept explanations and examples, helping you truly master each concept.",
   },
   {
     id: "05",
-    title: "Progress Tracking",
+    title: "Save, Organize, and Revisit",
     description:
-      " Monitor your progress over time with detailed analytics and reports on your performance.",
+      " easily save your intrview sets, orgnize them mostly in your dashboardd, pick up your prpeparation right where you left off.",
   },
 ];

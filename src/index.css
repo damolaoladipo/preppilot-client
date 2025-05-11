@@ -2,19 +2,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-family: "Urbanist", sans-serif;
+  --font-display: 'Urbanist', sans-serif;
   --breakpoint-3xl: 1920px;
-  --color-primary: #ff9324;
+  --color-primary: #FF9324;
 }
 
 @layer base {
   html {
-    font-family: var(--font-family);
+    font-family: var(--font-display)
   }
 
   body {
     background-color: #fcfbfc;
-    overflow: hidden;
+    overflow-x: hidden
   }
 }
 
@@ -27,7 +27,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background-color: transparent;
+  background: transparent;
 }
 
 @layer utilities {
@@ -41,7 +41,7 @@
   }
 
   .animate-text-shine {
-    animation: text-shine 1.5s ease-in-out infinite alternate;
+    animation: text-shine 3s ease-in-out infinite alternate;
   }
 
   @keyframes blob1 {
@@ -61,10 +61,10 @@
       transform: translate(0px, 0px) scale(1);
     }
     33% {
-      transform: translate(-40px, 60px) scale(1.1);
+      transform: translate(-40px, 60px) scale(1.05)
     }
     66% {
-      transform: translate(20px, -40px) scale(0.9);
+      transform: translate(20px, -40px) scale(0.95)
     }
   }
 
@@ -73,10 +73,10 @@
       transform: translate(0px, 0px) scale(1);
     }
     33% {
-      transform: translate(20px, 140px) scale(1.1);
+      transform: translate(20px, 140px) scale(1.15)
     }
     66% {
-      transform: translate(-30px, -30px) scale(0.9);
+      transform: translate(-30px, -30px) scale(0.85);
     }
   }
 
@@ -93,11 +93,11 @@
 
 
 .input-box {
-    @apply w-full flex justify-between gap-3 text-sm text-black bg-gray-50/50 rounded px-4 py-3 mb-4 mt-3 border-gray-100 outline-none focus-within:border-orange-300;
+    @apply w-full flex justify-between gap-3 text-sm text-black bg-gray-50/50 rounded px-4 py-3 mb-4 mt-3 border border-gray-100 outline-none focus-within:border-orange-300;
 }
 
 .btn-primary {
-    @apply w-full flex justify-center items-center gap-3 text-sm font-medium text-white bg-black shadow-lg shadow-lg shadow-orange-600/5 p-[10px] hover:bg-orange-600/15 hover:text-black cursor-pointer;
+    @apply w-full flex justify-center items-center gap-3 text-sm font-medium text-white bg-black shadow-lg shadow-orange-600/5 p-[10px] rounded-md my-1 hover:bg-orange-600/15 hover:text-black cursor-pointer;
 }
 
 .btn-small {

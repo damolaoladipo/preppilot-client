@@ -2,9 +2,10 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { ErrorBoundary } from "react-error-boundary";
+
 import Signup from "./screens/Auth/Signup";
 import LandingPage from "./screens/LandingPage";
-import Dashboard from "./screens/Dashboard/Dashboard";
+import Dashboard from "./screens/Home/Dashboard";
 import InterviewPrep from "./screens/InterviewPrep/InterviewPrep";
 import NotFound from "./screens/NotFound";
 
