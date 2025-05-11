@@ -4,12 +4,15 @@ import { LuSparkles } from "react-icons/lu"
 
 import HERO_IMG from "../assets/HERO_IMG.png"
 import { AppFeatures } from "../_data/appFeatures";
+import Login from "./Auth/Login";
+import Signup from "./Auth/Signup";
+import Modal from "../components/Modal/Modal";
 
 const LandingPage = () => {
   const navigate = useNavigate();
 
   const [openAuthModal, setOpenAuthModal] = useState(false);
-  const [currentpage, setCurrentPage] = useState("login");
+  const [currentPage, setCurrentPage] = useState("login");
 
   const hangleCTA = () => {
     // if (currentpage === "Login") {
@@ -140,8 +143,25 @@ const LandingPage = () => {
         </div>
       </div>
 
-   
-      />
+      <Modal 
+      isOpen={openAuthModal}
+      onClose={() => {
+        setOpenAuthModal(false)
+        setCurrentPage("login")
+      }}
+      hideHeader
+      >
+        <div>
+          {currentPage === "login" && (
+            <Login setCurrentPage={setCurrentPage}/>
+          )}
+          {
+            currentPage === 'sigup' && (
+              <Signup setCurrentPage={setCurrentPage}/>
+            )}
+        </div>
+      </Modal>
+      
     </>
   );
 };
